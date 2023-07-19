@@ -4,7 +4,7 @@
 [ext_resource path="res://Scripts/controlsScreen.gd" type="Script" id=2]
 
 [sub_resource type="DynamicFont" id=1]
-size = 19
+size = 15
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
@@ -37,22 +37,26 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 0.831373 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 68.0
-margin_top = 31.0
-margin_right = 263.0
-margin_bottom = 128.0
+margin_left = 74.0
+margin_top = 4.0
+margin_right = 269.0
+margin_bottom = 172.0
 custom_fonts/font = SubResource( 1 )
-text = "Controls
+text = "Controls - PC
 Walk Left      Arrow Left/A
 Walk Right      Arrow Right/D
-Jump           Spacebar/W"
+Jump           Spacebar/W
+Controls - Joystick
+Walk Left               Stick to Left
+Walk Right              Stick to Right
+Jump                   A                 "
 align = 1
 
 [node name="Return" type="Button" parent="."]
 margin_left = 141.0
-margin_top = 146.0
+margin_top = 167.0
 margin_right = 187.0
-margin_bottom = 167.0
+margin_bottom = 188.0
 custom_fonts/font = SubResource( 2 )
 custom_styles/hover = SubResource( 5 )
 custom_styles/pressed = SubResource( 3 )
