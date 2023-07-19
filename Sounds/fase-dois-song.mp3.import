@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fase-dois-song.mp3-8278282a9f522163f3f8bba3ae8c5de4.mp3str"
+
+[deps]
+
+source_file="res://Sounds/fase-dois-song.mp3"
+dest_files=[ "res://.import/fase-dois-song.mp3-8278282a9f522163f3f8bba3ae8c5de4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

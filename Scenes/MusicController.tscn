@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sounds/pirate-loot-menu-song.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Scripts/MusicController.gd" type="Script" id=2]
+[ext_resource path="res://Sounds/fase-um-song.mp3" type="AudioStream" id=3]
+
+[node name="MusicController" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="bgMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
+
+[node name="level1Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+autoplay = true

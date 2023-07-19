@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sword-hit-kill.mp3-4395aa6f35f387d7e90c7add1bad9c21.mp3str"
+
+[deps]
+
+source_file="res://Sounds/sword-hit-kill.mp3"
+dest_files=[ "res://.import/sword-hit-kill.mp3-4395aa6f35f387d7e90c7add1bad9c21.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

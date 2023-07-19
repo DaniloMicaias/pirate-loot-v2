@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sword-hit-normal.mp3-99a603cfb1e7648e6e3ff3393b5593d9.mp3str"
+
+[deps]
+
+source_file="res://Sounds/sword-hit-normal.mp3"
+dest_files=[ "res://.import/sword-hit-normal.mp3-99a603cfb1e7648e6e3ff3393b5593d9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

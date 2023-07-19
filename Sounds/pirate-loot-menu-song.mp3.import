@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pirate-loot-menu-song.mp3-b16760d0cf9d2e2d7afde0ea616923ca.mp3str"
+
+[deps]
+
+source_file="res://Sounds/pirate-loot-menu-song.mp3"
+dest_files=[ "res://.import/pirate-loot-menu-song.mp3-b16760d0cf9d2e2d7afde0ea616923ca.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

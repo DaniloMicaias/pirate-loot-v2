@@ -1,0 +1,64 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Font/AncientModernTales-a7Po.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/controlsScreen.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 19
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 18
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.372549, 0.290196, 0.290196, 0.207843 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[node name="controlScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="BG" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.831373 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 68.0
+margin_top = 31.0
+margin_right = 263.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 1 )
+text = "Controls
+Walk Left      Arrow Left/A
+Walk Right      Arrow Right/D
+Jump           Spacebar/W"
+align = 1
+
+[node name="Return" type="Button" parent="."]
+margin_left = 141.0
+margin_top = 146.0
+margin_right = 187.0
+margin_bottom = 167.0
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 6 )
+custom_styles/disabled = SubResource( 7 )
+custom_styles/normal = SubResource( 4 )
+text = "Return"
+
+[connection signal="pressed" from="Return" to="." method="_on_Return_pressed"]

@@ -1,0 +1,39 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/goal.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Shooter Traps/Sprites/Totems/Head 1/Idle 1/1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Pirate Treasure/Sprites/Diamond Effect/02.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Pirate Treasure/Sprites/Diamond Effect/03.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Pirate Treasure/Sprites/Diamond Effect/04.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Pirate Treasure/Sprites/Diamond Effect/01.png" type="Texture" id=6]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "collected",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 27.5, 10 )
+
+[node name="goal" type="Area2D"]
+collision_layer = 8
+script = ExtResource( 1 )
+path = "res://Levels/Level_02.tscn"
+
+[node name="goal" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "idle"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2( 0.5, 3 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_goal_body_entered"]

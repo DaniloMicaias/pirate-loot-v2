@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/open-chest.mp3-1d3fbd5d95291539726f770346c7ec73.mp3str"
+
+[deps]
+
+source_file="res://Sounds/open-chest.mp3"
+dest_files=[ "res://.import/open-chest.mp3-1d3fbd5d95291539726f770346c7ec73.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
