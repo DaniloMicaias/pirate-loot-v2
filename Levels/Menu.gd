@@ -4,6 +4,7 @@ func _ready():
 	$Controls/start.grab_focus()
 	MusicController.play_menu_music()
 	MusicController.stop_level1_music()
+	#MusicController.stop_level2_music()
 
 func _on_start_pressed():
 	get_tree().change_scene("res://Levels/Level_01.tscn")
