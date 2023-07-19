@@ -12,3 +12,5 @@ func _on_chest_body_entered(body):
 		var victoryScreen = load("res://Scenes/VictoryScreen.tscn").instance()
 		$chest.play("unlocked")
 		get_tree().current_scene.add_child(victoryScreen)
+		MusicController.stop_level3_music()
+		MusicController.play_openChest_music()

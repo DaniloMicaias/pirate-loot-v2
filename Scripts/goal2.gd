@@ -12,6 +12,7 @@ func _on_goal2_body_entered(body):
 	if body.name == "Player":
 		$goal2.play("collected")
 		changer.change_scene(path)
+		MusicController.stop_menu_music()
 		MusicController.stop_level2_music()
 		MusicController.play_level3_music()
 

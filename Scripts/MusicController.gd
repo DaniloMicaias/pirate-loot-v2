@@ -30,4 +30,12 @@ func play_level3_music():
 func stop_level3_music():
 	$level3Music.stop()
 	
+func play_openChest_music():
+	$openChest.play()
+
+func stop_openChest_music():
+	$openChest.stop()
+
+
+	
 
